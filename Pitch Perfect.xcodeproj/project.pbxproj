@@ -12,8 +12,6 @@
 		FC2AA843207D96FA008C8E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2AA841207D96FA008C8E09 /* Main.storyboard */; };
 		FC2AA845207D96FB008C8E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2AA844207D96FB008C8E09 /* Assets.xcassets */; };
 		FC2AA848207D96FB008C8E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2AA846207D96FB008C8E09 /* LaunchScreen.storyboard */; };
-		FC2AA853207D96FB008C8E09 /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2AA852207D96FB008C8E09 /* Pitch_PerfectTests.swift */; };
-		FC2AA85E207D96FB008C8E09 /* Pitch_PerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2AA85D207D96FB008C8E09 /* Pitch_PerfectUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FC2AA83A207D96FA008C8E09 /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2AA83A207D96FA008C8E09 /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Pitch Perfect.app"; path = "/Users/omrobbie/Documents/Xcode/Pitch Perfect/build/Debug-iphoneos/Pitch Perfect.app"; sourceTree = "<absolute>"; };
 		FC2AA83D207D96FA008C8E09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC2AA83F207D96FA008C8E09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC2AA842207D96FA008C8E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC2AA844207D96FB008C8E09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC2AA847207D96FB008C8E09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC2AA849207D96FB008C8E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC2AA84E207D96FB008C8E09 /* Pitch PerfectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pitch PerfectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC2AA852207D96FB008C8E09 /* Pitch_PerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectTests.swift; sourceTree = "<group>"; };
-		FC2AA854207D96FB008C8E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC2AA859207D96FB008C8E09 /* Pitch PerfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pitch PerfectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC2AA85D207D96FB008C8E09 /* Pitch_PerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectUITests.swift; sourceTree = "<group>"; };
-		FC2AA85F207D96FB008C8E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2AA84E207D96FB008C8E09 /* Pitch PerfectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Pitch PerfectTests.xctest"; path = "/Users/omrobbie/Documents/Xcode/Pitch Perfect/build/Debug-iphoneos/Pitch PerfectTests.xctest"; sourceTree = "<absolute>"; };
+		FC2AA859207D96FB008C8E09 /* Pitch PerfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Pitch PerfectUITests.xctest"; path = "/Users/omrobbie/Documents/Xcode/Pitch Perfect/build/Debug-iphoneos/Pitch PerfectUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,20 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				FC2AA83C207D96FA008C8E09 /* Pitch Perfect */,
-				FC2AA851207D96FB008C8E09 /* Pitch PerfectTests */,
-				FC2AA85C207D96FB008C8E09 /* Pitch PerfectUITests */,
-				FC2AA83B207D96FA008C8E09 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		FC2AA83B207D96FA008C8E09 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FC2AA83A207D96FA008C8E09 /* Pitch Perfect.app */,
-				FC2AA84E207D96FB008C8E09 /* Pitch PerfectTests.xctest */,
-				FC2AA859207D96FB008C8E09 /* Pitch PerfectUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FC2AA83C207D96FA008C8E09 /* Pitch Perfect */ = {
@@ -105,24 +86,6 @@
 				FC2AA849207D96FB008C8E09 /* Info.plist */,
 			);
 			path = "Pitch Perfect";
-			sourceTree = "<group>";
-		};
-		FC2AA851207D96FB008C8E09 /* Pitch PerfectTests */ = {
-			isa = PBXGroup;
-			children = (
-				FC2AA852207D96FB008C8E09 /* Pitch_PerfectTests.swift */,
-				FC2AA854207D96FB008C8E09 /* Info.plist */,
-			);
-			path = "Pitch PerfectTests";
-			sourceTree = "<group>";
-		};
-		FC2AA85C207D96FB008C8E09 /* Pitch PerfectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FC2AA85D207D96FB008C8E09 /* Pitch_PerfectUITests.swift */,
-				FC2AA85F207D96FB008C8E09 /* Info.plist */,
-			);
-			path = "Pitch PerfectUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +176,7 @@
 				Base,
 			);
 			mainGroup = FC2AA831207D96FA008C8E09;
-			productRefGroup = FC2AA83B207D96FA008C8E09 /* Products */;
+			productRefGroup = FC2AA831207D96FA008C8E09;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -265,7 +228,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC2AA853207D96FB008C8E09 /* Pitch_PerfectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC2AA85E207D96FB008C8E09 /* Pitch_PerfectUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

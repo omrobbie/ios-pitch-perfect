@@ -60,7 +60,6 @@
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PsJ-cB-TOk"/>
-                                    <segue destination="vCg-39-Wjz" kind="show" identifier="" id="Q1q-VU-nwJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,16 +79,17 @@
                         <outlet property="recordingButton" destination="ObQ-oh-RnL" id="aTz-Mo-OfP"/>
                         <outlet property="recordingLabel" destination="s8A-me-XPo" id="Gna-6Y-xWD"/>
                         <outlet property="stopRecordingButton" destination="aQD-mZ-lnR" id="vJh-wU-YYe"/>
+                        <segue destination="vCg-39-Wjz" kind="show" identifier="stopRecording" id="VBb-71-fi6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-168" y="134"/>
+            <point key="canvasLocation" x="30" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="Gxm-I4-r7Z">
             <objects>
-                <viewController id="vCg-39-Wjz" sceneMemberID="viewController">
+                <viewController id="vCg-39-Wjz" customClass="PlaySoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Be9-kq-fWJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wGk-RP-1Lc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="314" y="134"/>
+            <point key="canvasLocation" x="724" y="134"/>
         </scene>
     </scenes>
     <resources>

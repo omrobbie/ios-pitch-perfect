@@ -12,6 +12,7 @@
 		FC2AA843207D96FA008C8E09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2AA841207D96FA008C8E09 /* Main.storyboard */; };
 		FC2AA845207D96FB008C8E09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2AA844207D96FB008C8E09 /* Assets.xcassets */; };
 		FC2AA848207D96FB008C8E09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2AA846207D96FB008C8E09 /* LaunchScreen.storyboard */; };
+		FC2AA86C207E102B008C8E09 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2AA86B207E102B008C8E09 /* PlaySoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		FC2AA849207D96FB008C8E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC2AA84E207D96FB008C8E09 /* Pitch PerfectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Pitch PerfectTests.xctest"; path = "/Users/omrobbie/Documents/Xcode/Pitch Perfect/build/Debug-iphoneos/Pitch PerfectTests.xctest"; sourceTree = "<absolute>"; };
 		FC2AA859207D96FB008C8E09 /* Pitch PerfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "Pitch PerfectUITests.xctest"; path = "/Users/omrobbie/Documents/Xcode/Pitch Perfect/build/Debug-iphoneos/Pitch PerfectUITests.xctest"; sourceTree = "<absolute>"; };
+		FC2AA86B207E102B008C8E09 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			children = (
 				FC2AA83D207D96FA008C8E09 /* AppDelegate.swift */,
 				FC2AA83F207D96FA008C8E09 /* RecordSoundsViewController.swift */,
+				FC2AA86B207E102B008C8E09 /* PlaySoundsViewController.swift */,
 				FC2AA841207D96FA008C8E09 /* Main.storyboard */,
 				FC2AA844207D96FB008C8E09 /* Assets.xcassets */,
 				FC2AA846207D96FB008C8E09 /* LaunchScreen.storyboard */,
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2AA840207D96FA008C8E09 /* RecordSoundsViewController.swift in Sources */,
+				FC2AA86C207E102B008C8E09 /* PlaySoundsViewController.swift in Sources */,
 				FC2AA83E207D96FA008C8E09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecordSoundsViewController.swift
 //  Pitch Perfect
 //
 //  Created by omrobbie on 11/04/18.
@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
-
+class RecordSoundsViewController: UIViewController {
+    
     @IBOutlet weak var recordingLabel: UILabel!
     @IBOutlet weak var recordingButton: UIButton!
     @IBOutlet weak var stopRecordingButton: UIButton!
+    
+    var audioRecorder: AVAudioRecorder!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +36,27 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func startRecording() {
+        let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
+        let recordingName = "recordedVoice.wav"
+        let pathArray = [dirPath, recordingName]
+        let filePath = URL(string: pathArray.joined(separator: "/"))
+        
+        let session = AVAudioSession.sharedInstance()
+        try! session.setCategory(AVAudioSessionCategoryPlayAndRecord, with:AVAudioSessionCategoryOptions.defaultToSpeaker)
+        
+        try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
+        audioRecorder.isMeteringEnabled = true
+        audioRecorder.prepareToRecord()
+        audioRecorder.record()
+    }
+    
+    func stopRecording() {
+        audioRecorder.stop()
+        let session = AVAudioSession.sharedInstance()
+        try! session.setActive(false)
+    }
 
     @IBAction func recordAudio(_ sender: Any) {
         print("recording button clicked!")
@@ -40,6 +64,8 @@ class ViewController: UIViewController {
         
         recordingButton.isEnabled = false
         stopRecordingButton.isEnabled = true
+        
+        startRecording()
     }
     
     @IBAction func stopRecording(_ sender: Any) {
@@ -48,6 +74,8 @@ class ViewController: UIViewController {
         
         stopRecordingButton.isEnabled = false
         recordingButton.isEnabled = true
+        
+        stopRecording()
     }
 }
 

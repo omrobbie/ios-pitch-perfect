@@ -12,6 +12,14 @@ class PlaySoundsViewController: UIViewController {
     
     var recordedAudioUrl: URL!
     
+    @IBOutlet weak var snailButton: UIButton!
+    @IBOutlet weak var rabbitButton: UIButton!
+    @IBOutlet weak var chipmunkButton: UIButton!
+    @IBOutlet weak var vaderButton: UIButton!
+    @IBOutlet weak var birdButton: UIButton!
+    @IBOutlet weak var waveButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,4 +42,12 @@ class PlaySoundsViewController: UIViewController {
     }
     */
 
+    @IBAction func playSoundButton(_ sender: UIButton) {
+        print("play sound button")
+    }
+    
+    @IBAction func stopSoundButton(_ sender: Any) {
+        print("stop sound button")
+    }
+    
 }

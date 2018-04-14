@@ -7,10 +7,9 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
-    
-    var recordedAudioUrl: URL!
     
     @IBOutlet weak var snailButton: UIButton!
     @IBOutlet weak var rabbitButton: UIButton!
@@ -20,10 +19,32 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var waveButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
+    var recordedAudioUrl: URL!
+    
+    var audioFile: AVAudioFile!
+    var audioEngine: AVAudioEngine!
+    var audioPlayerNode: AVAudioPlayerNode!
+    var stopTimer: Timer!
+    
+    enum ButtonType: Int {
+        case slow = 0,
+        fast,
+        chipmunk,
+        vader,
+        bird,
+        wave
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupAudio()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        configureUI(.notPlaying)
     }
 
     override func didReceiveMemoryWarning() {
